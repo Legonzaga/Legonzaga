@@ -1,7 +1,7 @@
 
 - 👋 Hi there! I'm Lean Vasconcellos
 
-- ✨ hi, i'm Lean Vasconcellos, a passionate self-taught Software Engineer from brazil. Love JS, Angular, Ionic.
+- ✨ hi, i'm Lean Vasconcellos, a passionate Software Developer from brazil. Love JS, Angular, Ionic.
 
 - I love sharing my knowledge with others, and I do that through content creation on my Blog and YouTube channel. 
 
