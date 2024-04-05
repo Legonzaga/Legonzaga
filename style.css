@@ -26,9 +26,7 @@
     --size-4      : 0.71rem;
 }
 html,body {
-    width               : 100%;
     display             : flex;
-    gap                 : 8px;
     font-size           : 16px;
     font-family         : "Exo 2", sans-serif;
     font-optical-sizing : auto;
@@ -36,7 +34,7 @@ html,body {
     font-style          : normal;    
     margin              : 0;  
     padding             : 0;
-    scroll-behavior: smooth;
+    scroll-behavior     : smooth;
 }   
  .header-0 {
    font-size: var(--header-0);
@@ -71,7 +69,8 @@ html,body {
  }
 table {
     border-collapse: collapse;
-    border : none;
+    border         : none;
+    min-width      : 360px;
 }
 table td {
     border      : none;
@@ -102,6 +101,7 @@ table tr {
    justify-content: center;
  }
  .right {
+  display: flex;
   justify-content: flex-end;
 }
  .center-self{
@@ -120,10 +120,12 @@ table tr {
 .col-1 {
     display : flex;
     flex    : 1;
-    gap     : 8px;
 }
 .column {
     flex-direction: column;
+}
+.full-width {
+  width: 100%;
 }
 .container{
    display          : flex;
@@ -131,9 +133,9 @@ table tr {
    column-gap       : 24px;
    flex-direction   : column;
    background-color : var( --dark );
-   width            : 100%;
+   width            : 100vw;
    color            : var( --light );
-   padding-top: 100px;
+   padding-top      : 100px;
  }
  .nav-container  {
    min-height      : 96px;
@@ -164,11 +166,11 @@ table tr {
    list-style    : none; 
  }
  .nav-links ul li {
-  display: inline-block; /* Exibe os itens da lista em linha */
-  margin-right: 10px; /* Adiciona um espaçamento entre os itens da lista */
+  display: inline-block;
+  margin-right: 10px;
 }
 .nav-links ul li:last-child {
-  margin-right: 0; /* Remove o espaçamento do último item da lista */
+  margin-right: 0;
 }
  .nav-links a {
    font-size       : var( --size1 );
@@ -205,45 +207,64 @@ table tr {
    color: var(--purpleC);
    transition: .5s;
  }
- .banner{
+ #section1 .banner{
     position       : relative;
-    display        : flex;
-    justify-content: center;
     width          : 100%;  
     background-color:#191919;
  }
- .banner div {
-  justify-content: center;
-  align-items: center;
- }
- .banner figure {
+ #section1 .banner {
   position: relative;
-  bottom: -20px;
+  height: auto;
  }
- .my-name {
+ #section1 .banner .my-name {
+  z-index: 2;
+  width: 100%;
+}
+#section1 .banner .my-name #my-name {
+  position  : absolute;
+  top       : 256px;
+  left      : 350px;
+  z-index   : 5;
+  font-size : 2rem;
+  font-weight: 100;
+} 
+#section1 .banner .my-photo{
+  width: 100%;
+}
+#my-photo {
   position: relative;
-  top:0;
-  left:300px;
-  font-size: 4rem;
- }
- .my-role {
-  position: relative;
-  top:0;
-  left:-300px;
-  font-size: 3.5rem;
-  color: var(--purpleC);
- }
- .imagine{
-    position: absolute;
-    bottom: 64px;
-    left:64px;
-    max-width: 450px;
-    font-size: 12px;
- }
+  left: 64px;
+  bottom  : -20px;
+  z-index :1;  
+}
+#section1 .banner .my-role {
+  color : var(--purpleC);
+}
+#section1 .banner .my-role  #my-role {
+  position  : absolute;
+  top       : 276px;
+  right     : 353px;
+  z-index   : 0;
+  font-size : 5rem;
+  font-weight: 300;
+}
+#section1 .banner .my-imagine{
+  position: relative;  
+} 
+#imagine {
+  position  : absolute;
+  bottom    : 270px;
+  left      : -230px;
+  min-width : 364px;
+  max-width : 450px;
+  font-size : 12px;
+  z-index   : 5;
+}
  main {
    display         : flex;
    gap             : 8px;
    flex-direction: column;
+   width: 100%;
  } 
  main section {
    display     : flex;
@@ -364,6 +385,51 @@ footer{
 
  @media (max-width: 640px) {
    
+  .container{
+    display          : flex;
+    gap              : 8px;
+    column-gap       : 16px;
+    flex-direction   : column;
+    background-color : var( --dark );
+    width            : 100%;
+    color            : var( --light );
+    padding-top      : 30px;
+  }
+
+  #section1 .banner .my-name #my-name {
+    position  : absolute;
+    top       : 64px;
+    left      : 8px;
+    z-index   : 5;
+    font-size : 2rem;
+    font-weight: 100;
+  } 
+
+  #imagine {
+    position  : absolute;
+    bottom    : 24px;
+    left      : 0;
+    max-width : 120px;
+    font-size : 12px;
+    z-index   : 5;
+  }
+
+  #my-photo {
+    position: relative;
+    left    : 96px;
+    bottom  : -20px;
+    z-index :1;  
+  }
+
+  #section1 .banner .my-role  #my-role {
+    position  : absolute;
+    top       : 172px;
+    left     : 8px;
+    z-index   : 10;
+    font-size : 3rem;
+    font-weight: 400;
+  }
+
    .nav-container  {
        padding : 0 24px;        
    }

@@ -19,15 +19,15 @@
         <div class="logo">Lean</div>
         <div class="nav-links">
             <ul>
-              <li><a href="#section1" title="">Home</a></li>
-              <li><a href="#section3" title="">Sobre</a></li>
-              <li><a href="#section4" title="">Skills</a></li>
-              <li><a href="#section5" title="">Portifólio</a></li>
-              <li><a href="#section6" title="">Roadmap</a></li>
-              <li><a href="#section7" title="">Contato</a></li>
+              <li><a href="#section1" title="Home">Home</a></li>
+              <li><a href="#section3" title="Sobre">Sobre</a></li>
+              <li><a href="#section4" title="Skills">Skills</a></li>
+              <li><a href="#section5" title="Portifolio">Portifolio</a></li>
+              <li><a href="#section6" title="Roadmap">Roadmap</a></li>
+              <li><a href="#section7" title="Contato">Contato</a></li>
             </ul>
           </div>
-        <div class="cta-button-container">
+        <div class="cta-button-container right">
             <a href="#section7">
                 <button class="cta-button">Fale Comigo</button>
             </a>
@@ -39,23 +39,31 @@
         <section id="section1" class="section1">      
             <div class="flex row wrap banner">
                 <div class="col-1 my-name">
-                    <span>Lean <br />
-                    Vasconcellos</span>
+                    <div id="my-name">
+                        <span>Olá, sou <br />
+                        Lean
+                        Vasconcellos</span>
+                    </div>
                 </div> 
-                <div class="col-1">
-                    <figure>
-                        <img src="assets/banner_lean.png" title="Lean" alt="Lean">
-                    </figure>
+                <div class="my-imagine">
+                    <p id="imagine">/ imagine <br />Um desenvolvedor que combina sua paixão incessante pelo desenvolvimento de software com sua capacidade de criar soluções inovadoras e impactantes.</p>
+                </div>
+                <div class="col-1 column my-photo">
+                    <div id="my-photo">
+                        <figure>
+                            <img src="assets/banner_lean.png" title="Lean" alt="Lean">
+                        </figure>
+                    </div>
                 </div> 
                 <div class="col-1 my-role">
-                    <span>Software <br />
-                        Engineer</span>
+                    <div id="my-role">
+                        <span>Software <br />
+                            Engineer</span>
+                    </div>
                 </div>
-                <p class="imagine">/ imagine <br />Um desenvolvedor qque combina sua paixão incessante pelo desenvolvimento de software com sua capacidade de criar soluções inovadoras e impactantes.</p>
             <div>
-        </div>     
-
         </section>
+
         <section id="section2" class="section2 wrap">
             <div class="col-1 center">
                 <div id="experience">
@@ -79,8 +87,8 @@
                 <h2>Quem sou eu?</h2>
                 <h3>Sobre mim</h3>
             </div>
-            <div class="row wrap">
-
+            <div class="row wrap full-width">
+ 
                 <div class="col-1 column center center-self">
                     <h3>RESUMO</h3>
                     <table>
@@ -108,7 +116,7 @@
                 </div>
                 <div class="col-1 center v-align-center">                    
                     <figure>
-                        <img src="assets/lean.jpg" title="Minha Foto" alt="Foto do Lean" />
+                        <img src="assets/lean.jpg" style="max-width:100%;" title="Minha Foto" alt="Foto do Lean" />
                         <figcaption>Este sou eu: Lean Vasconcellos</figcaption>
                     </figure>                    
                 </div>
@@ -117,7 +125,7 @@
         <section id="section4" class="section4">section4</section>
         <section id="section5" class="section5">
             <div class="flex column wrap">
-                <div class="center-self"><h2>Portifólio</h2></div>
+                <div class="center-self"><h2>Portifolio</h2></div>
                 <div id="portifolio" class="flex row wrap">
                     <div class="flex column portifolio">
                         <h3>Stake</h3>
@@ -171,7 +179,7 @@
                             </tr>
                             <tr>
                                 <td>Ano de formação</td>
-                                <td>DEZ 2026/SC</td>
+                                <td>DEZ 2026</td>
                             </tr>
                         </table>                        
                     </div>
@@ -285,12 +293,7 @@
 
   <script src="script.js"></script>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
 </body>
 
 </html>
