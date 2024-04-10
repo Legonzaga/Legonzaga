@@ -35,6 +35,7 @@ html,body {
     margin              : 0;  
     padding             : 0;
     scroll-behavior     : smooth;
+    width: 100%;
 }   
  .header-0 {
    font-size: var(--header-0);
@@ -133,7 +134,7 @@ table tr {
    column-gap       : 24px;
    flex-direction   : column;
    background-color : var( --dark );
-   width            : 100vw;
+   width            : 100%;
    color            : var( --light );
    padding-top      : 100px;
  }
@@ -315,6 +316,99 @@ table tr {
     display: flex;
     flex-direction: column;
  }
+ .section4 {
+  display         : flex;
+  flex-direction  : column;
+  flex-wrap       : wrap;
+}
+.skill {
+  position: relative;
+  width   : 480px;
+  margin: 24px 8px;
+}
+.skill-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.skill-title-right {
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.skill-percentage-right {
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.skill-bg {
+  position: absolute;
+  top:24px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background-color: var(--purpleC);
+  z-index: 1;
+}
+.skill-level,
+.skill-level-95,
+.skill-level-85,
+.skill-level-80,
+.skill-level-75,
+.skill-level-70 {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    height: 16px;
+    background-color: var(--purpleD);
+    z-index: 2;
+  }
+
+.skill-level-95 {
+  width: 95%;
+}
+.skill-level-85 {
+  width: 85%;
+}
+.skill-level-80 {
+  width: 80%;
+}
+.skill-level-75 {
+  width: 75%;
+}
+.skill-level-70 {
+  width: 70%;
+}
+.skill-level-right,
+.skill-level-95-right,
+.skill-level-85-right,
+.skill-level-80-right,
+.skill-level-75-right,
+.skill-level-70-right {
+  position: absolute;
+  top: 24px;
+    left: 0;
+    height: 16px;
+    background-color: var(--purpleD);
+    z-index: 2;
+  }
+
+.skill-level-95-right {
+  width: 95%;
+}
+.skill-level-85-right {
+  width: 85%;
+}
+.skill-level-80-right {
+  width: 80%;
+}
+.skill-level-75-right {
+  width: 75%;
+}
+.skill-level-70-right {
+  width: 70%;
+}
+
  .section5 {
     display         : flex;
     flex-direction  : column;
